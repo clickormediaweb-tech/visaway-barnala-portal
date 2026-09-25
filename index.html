@@ -632,15 +632,16 @@
     </div>
 
     <script>
-        // Local testing link placeholder (will update when deployed later)
-        const portalUrl = window.location.href.split('#')[0];
+        // REPLACE THIS WITH YOUR ACTUAL GITHUB PAGES URL ONCE HOSTED:
+        // Example: "https://yourusername.github.io/visaway-barnala-portal/"
+        const githubPageUrl = "https://clickormediaweb-tech.github.io/visaway-barnala-portal/";
         
         // PASTE YOUR BARNALA BRANCH GOOGLE APPS SCRIPT WEB APP URL INSIDE THE QUOTES BELOW:
-        const WEB_APP_URL = "PASTE_BARNALA_APPS_SCRIPT_URL_HERE";
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzMedCDQEPMxQq6yTQ04SQGqH1bzsMBcdzVjd2laBsZBzhyVfx9287k_GQgp_ee2AjB/exec";
 
         window.onload = function() {
             new QRCode(document.getElementById("qrcode"), {
-                text: portalUrl + "#portal",
+                text: githubPageUrl + "#portal",
                 width: 170,
                 height: 170,
                 colorDark : "#0B192C",
